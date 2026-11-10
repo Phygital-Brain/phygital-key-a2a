@@ -4,7 +4,7 @@ version = "0.3.1"
 edition = "2024"
 rust-version = "1.89"
 license = "Apache-2.0"
-repository = "https://github.com/Phygital-Key/phygital-key-a2a"
+repository = "https://github.com/Phygital-Brain/phygital-key-a2a"
 authors = ["Phygital-Key and the Phygital Key contributors"]
 description = "Phygital Key for A2A: agents ask through the A2A protocol, a person approves the exact action with a passkey, and any service checks the signed yes offline."
 keywords = ["a2a", "webauthn", "passkey", "approval", "ai-agents"]
@@ -22,8 +22,8 @@ tck = []
 [dependencies]
 # The shared engine, from the base's main branch. Cargo.lock pins the exact
 # commit, and the sync workflow moves it forward after the tests pass.
-phygital-key-gate = { git = "https://github.com/Phygital-Key/phygital-key", branch = "main" }
-phygital-key-verify = { git = "https://github.com/Phygital-Key/phygital-key", branch = "main" }
+phygital-key-gate = { git = "https://github.com/Phygital-Brain/phygital-key", branch = "main" }
+phygital-key-verify = { git = "https://github.com/Phygital-Brain/phygital-key", branch = "main" }
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 tokio = { version = "1", features = ["rt-multi-thread", "macros", "net", "sync", "time", "signal", "io-std"] }

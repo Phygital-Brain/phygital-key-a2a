@@ -7,29 +7,29 @@
 <p align="center">
 <a href="#open-source-and-credit"><img src="https://img.shields.io/badge/-open%20source-26D0F2" alt="Open source"></a>
 <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-blue" alt="License: Apache-2.0"></a>
-<a href="https://github.com/Phygital-Key/phygital-key-a2a/actions/workflows/ci.yml"><img src="https://github.com/Phygital-Key/phygital-key-a2a/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
-<a href="https://github.com/Phygital-Key/phygital-key-a2a/releases/latest"><img src="https://img.shields.io/github/v/release/Phygital-Key/phygital-key-a2a" alt="Latest release"></a>
+<a href="https://github.com/Phygital-Brain/phygital-key-a2a/actions/workflows/ci.yml"><img src="https://github.com/Phygital-Brain/phygital-key-a2a/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+<a href="https://github.com/Phygital-Brain/phygital-key-a2a/releases/latest"><img src="https://img.shields.io/github/v/release/Phygital-Brain/phygital-key-a2a" alt="Latest release"></a>
 <a href="Cargo.toml"><img src="https://img.shields.io/badge/rust-1.89%2B-orange" alt="Rust 1.89+"></a>
 <a href="https://a2a-protocol.org/latest/specification/"><img src="https://img.shields.io/badge/A2A-1.0%20JSON--RPC-black" alt="A2A 1.0, JSON-RPC"></a>
-<a href="https://github.com/Phygital-Key/phygital-key-a2a/stargazers"><img src="https://img.shields.io/github/stars/Phygital-Key/phygital-key-a2a?style=flat" alt="GitHub stars"></a>
-<a href="https://github.com/Phygital-Key/phygital-key-a2a/commits/main"><img src="https://img.shields.io/github/last-commit/Phygital-Key/phygital-key-a2a" alt="Last commit"></a>
-<a href="https://scorecard.dev/viewer/?uri=github.com/Phygital-Key/phygital-key-a2a"><img src="https://api.scorecard.dev/projects/github.com/Phygital-Key/phygital-key-a2a/badge" alt="OpenSSF Scorecard"></a>
+<a href="https://github.com/Phygital-Brain/phygital-key-a2a/stargazers"><img src="https://img.shields.io/github/stars/Phygital-Brain/phygital-key-a2a?style=flat" alt="GitHub stars"></a>
+<a href="https://github.com/Phygital-Brain/phygital-key-a2a/commits/main"><img src="https://img.shields.io/github/last-commit/Phygital-Brain/phygital-key-a2a" alt="Last commit"></a>
+<a href="https://scorecard.dev/viewer/?uri=github.com/Phygital-Brain/phygital-key-a2a"><img src="https://api.scorecard.dev/projects/github.com/Phygital-Brain/phygital-key-a2a/badge" alt="OpenSSF Scorecard"></a>
 </p>
 
 <p align="center">
-<a href="https://github.com/Phygital-Key/phygital-key/blob/main/docs/webauthn.md"><img src="https://img.shields.io/badge/WebAuthn-ES256%20%C2%B7%20P--256-FF6B5A" alt="WebAuthn, ES256 on P-256"></a>
+<a href="https://github.com/Phygital-Brain/phygital-key/blob/main/docs/webauthn.md"><img src="https://img.shields.io/badge/WebAuthn-ES256%20%C2%B7%20P--256-FF6B5A" alt="WebAuthn, ES256 on P-256"></a>
 <a href="docs/testing.md"><img src="https://img.shields.io/badge/end--to--end-172%20checks-26D0F2" alt="172 end-to-end checks"></a>
 <a href="docs/testing.md#a2a-conformance-kit"><img src="https://img.shields.io/badge/a2a--tck%20MUST-81%20passed%20(test%20build)-26D0F2" alt="a2a-tck MUST level on JSON-RPC: 81 passed with the test build"></a>
-<a href="https://github.com/Phygital-Key/phygital-key/blob/main/docs/secure-install.md"><img src="https://img.shields.io/badge/secure%20install-macOS%20%C2%B7%20Linux-555" alt="Secure install on macOS and Linux"></a>
-<a href="https://github.com/Phygital-Key/phygital-key/blob/main/docs/threat-model.md"><img src="https://img.shields.io/badge/status-pre--audit-FF6B5A" alt="Status: pre-audit"></a>
-<a href="https://github.com/Phygital-Key/phygital-key/blob/main/docs/updates.md"><img src="https://img.shields.io/badge/releases-signed-26D0F2" alt="Signed releases"></a>
+<a href="https://github.com/Phygital-Brain/phygital-key/blob/main/docs/secure-install.md"><img src="https://img.shields.io/badge/secure%20install-macOS%20%C2%B7%20Linux-555" alt="Secure install on macOS and Linux"></a>
+<a href="https://github.com/Phygital-Brain/phygital-key/blob/main/docs/threat-model.md"><img src="https://img.shields.io/badge/status-pre--audit-FF6B5A" alt="Status: pre-audit"></a>
+<a href="https://github.com/Phygital-Brain/phygital-key/blob/main/docs/updates.md"><img src="https://img.shields.io/badge/releases-signed-26D0F2" alt="Signed releases"></a>
 <a href="Cargo.toml"><img src="https://img.shields.io/badge/%23!%5Bforbid(unsafe__code)%5D-yes-555" alt="#![forbid(unsafe_code)]"></a>
-<a href="https://github.com/Phygital-Key/phygital-key/blob/main/docs/privacy.md"><img src="https://img.shields.io/badge/telemetry-none-555" alt="No telemetry"></a>
+<a href="https://github.com/Phygital-Brain/phygital-key/blob/main/docs/privacy.md"><img src="https://img.shields.io/badge/telemetry-none-555" alt="No telemetry"></a>
 </p>
 
 <p align="center"><b>Free and open source under the Apache-2.0 license.</b> Keep the <code>NOTICE</code> file. See <a href="#open-source-and-credit">Open source and credit</a>.</p>
 
-<p align="center"><b>Pick your product:</b> <b>Phygital Key A2A</b> (this one, for agents that speak A2A) · <a href="https://github.com/Phygital-Key/phygital-key-mcp">Phygital Key MCP</a> (for AI apps that speak MCP) · <a href="https://github.com/Phygital-Key/phygital-key">the shared base</a> (verifiers, spec, shared guides)</p>
+<p align="center"><b>Pick your product:</b> <b>Phygital Key A2A</b> (this one, for agents that speak A2A) · <a href="https://github.com/Phygital-Brain/phygital-key-mcp">Phygital Key MCP</a> (for AI apps that speak MCP) · <a href="https://github.com/Phygital-Brain/phygital-key">the shared base</a> (verifiers, spec, shared guides)</p>
 
 <p align="center">
 <a href="#install">Install</a> ·
@@ -44,13 +44,13 @@
 
 ## What it is
 
-Phygital Key A2A is a [Phygital Key](https://github.com/Phygital-Key/phygital-key) product for AI agents that use [A2A](https://a2a-protocol.org/latest/specification/) (Agent2Agent, version 1.0, a common way for agents to talk to each other). It is one program, `phygital-key-a2a`. It runs an A2A agent and the [approval page](https://github.com/Phygital-Key/phygital-key/blob/main/docs/glossary.md#approval-page), the page where you say yes or no.
+Phygital Key A2A is a [Phygital Key](https://github.com/Phygital-Brain/phygital-key) product for AI agents that use [A2A](https://a2a-protocol.org/latest/specification/) (Agent2Agent, version 1.0, a common way for agents to talk to each other). It is one program, `phygital-key-a2a`. It runs an A2A agent and the [approval page](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/glossary.md#approval-page), the page where you say yes or no.
 
 It is an agent whose only job is to get your approval. Before another agent deploys code, pays, deletes or sends something, it sends this agent a message with the exact thing it wants to do. You read it on the approval page and approve with a passkey: your fingerprint, face, PIN or a hardware security key. Your key signs that exact request (WebAuthn, ES256 on P-256). The asking agent gets the signed approval back as a task result (an artifact) and passes it to the service that does the work. The service checks it itself, offline, before it acts.
 
 The agent can never approve. Only your key's signature on the approval page counts as a yes. A message, a task state, extra data or any text never does. If the request changes by even one character, the service refuses it with `REQUEST_MISMATCH`.
 
-The approval page, the keys, standing approvals, receipts, the audit log, the secure install and signed updates come from the shared base, [Phygital-Key/phygital-key](https://github.com/Phygital-Key/phygital-key). This repository adds the A2A part. It uses the same approval format (`pka.1`) as [Phygital Key MCP](https://github.com/Phygital-Key/phygital-key-mcp), so a service that already checks Phygital Key approvals needs no change.
+The approval page, the keys, standing approvals, receipts, the audit log, the secure install and signed updates come from the shared base, [Phygital-Brain/phygital-key](https://github.com/Phygital-Brain/phygital-key). This repository adds the A2A part. It uses the same approval format (`pka.1`) as [Phygital Key MCP](https://github.com/Phygital-Brain/phygital-key-mcp), so a service that already checks Phygital Key approvals needs no change.
 
 ## Why it exists
 
@@ -70,7 +70,7 @@ Phygital Key A2A gives the service proof it can check:
 
 ## How it works
 
-<p align="center"><img src="https://raw.githubusercontent.com/Phygital-Key/phygital-key/main/docs/images/promo/how.png" alt="How it works, four roles and one signed yes: 01 the agent asks for one exact request for one service, over MCP or A2A; 02 the gate shows every field on the approval page and has no key, so it can never approve; 03 you approve with your fingerprint, face, PIN or key, which makes an ES256 signature; 04 the service checks the signed yes itself, offline, with verify() returning ok, then acts." width="100%"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/Phygital-Brain/phygital-key/main/docs/images/promo/how.png" alt="How it works, four roles and one signed yes: 01 the agent asks for one exact request for one service, over MCP or A2A; 02 the gate shows every field on the approval page and has no key, so it can never approve; 03 you approve with your fingerprint, face, PIN or key, which makes an ES256 signature; 04 the service checks the signed yes itself, offline, with verify() returning ok, then acts." width="100%"></p>
 
 ```mermaid
 sequenceDiagram
@@ -97,14 +97,14 @@ Four roles, and what each one can and can't do:
 | **The gate** (`phygital-key-a2a`) | Shows the request and collects your signature | Sign an approval by itself, or finish a task without your signature |
 | **The service** (the one that checks, also called the verifier) | Its own name (audience), the request it runs, how strong a yes each action needs, which keys it trusts | Accept a request you did not sign |
 
-More: [how it works](https://github.com/Phygital-Key/phygital-key/blob/main/docs/how-it-works.md), [protocol](docs/protocol.md), [the open spec](https://github.com/Phygital-Key/phygital-key/blob/main/docs/spec.md).
+More: [how it works](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/how-it-works.md), [protocol](docs/protocol.md), [the open spec](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/spec.md).
 
 ## What you see
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/Phygital-Key/phygital-key/main/docs/images/approve-dark-phone.png" alt="The approval page on a phone in the dark theme: a deploy request carried out by the demo service, proof needed fingerprint, face or PIN, decide within 10 minutes, every detail listed (env production, service api, version 2.4.1), the exact text being signed, and Deny and Approve with my key buttons" width="230">
-<img src="https://raw.githubusercontent.com/Phygital-Key/phygital-key/main/docs/images/check-this-light.png" alt="A payment request in the light theme to ACME Ltd for amount_cents 12000 in EUR, where the note and reference fields are flagged with a Check this warning about look-alike, invisible or extra-space characters" width="230">
-<img src="https://raw.githubusercontent.com/Phygital-Key/phygital-key/main/docs/images/standing-dark.png" alt="A standing approval request in the dark theme: payments to ACME Ltd in EUR, amount_cents from 1 to 2000, anything else refused, at most 5 times until an end date, with every detail and the Deny and Approve with my key buttons" width="230">
+<img src="https://raw.githubusercontent.com/Phygital-Brain/phygital-key/main/docs/images/approve-dark-phone.png" alt="The approval page on a phone in the dark theme: a deploy request carried out by the demo service, proof needed fingerprint, face or PIN, decide within 10 minutes, every detail listed (env production, service api, version 2.4.1), the exact text being signed, and Deny and Approve with my key buttons" width="230">
+<img src="https://raw.githubusercontent.com/Phygital-Brain/phygital-key/main/docs/images/check-this-light.png" alt="A payment request in the light theme to ACME Ltd for amount_cents 12000 in EUR, where the note and reference fields are flagged with a Check this warning about look-alike, invisible or extra-space characters" width="230">
+<img src="https://raw.githubusercontent.com/Phygital-Brain/phygital-key/main/docs/images/standing-dark.png" alt="A standing approval request in the dark theme: payments to ACME Ltd in EUR, amount_cents from 1 to 2000, anything else refused, at most 5 times until an end date, with every detail and the Deny and Approve with my key buttons" width="230">
 </p>
 
 These screenshots come from the shared approval page, so Phygital Key A2A shows the same one (with its own demo service on port 7479). The gate builds the page from the request itself, never from text an agent wrote. The page:
@@ -114,7 +114,7 @@ These screenshots come from the shared approval page, so Phygital Key A2A shows 
 - shows a short fingerprint (SHA-256) of the exact text you sign;
 - checks that what it shows is what will be signed, before it asks your key.
 
-Text inside a request or a follow-up message, like "already approved", is shown as plain text and changes nothing. How to read the page: [approving](https://github.com/Phygital-Key/phygital-key/blob/main/docs/approving.md). How the page protects you: [approval page](https://github.com/Phygital-Key/phygital-key/blob/main/docs/approval-page.md).
+Text inside a request or a follow-up message, like "already approved", is shown as plain text and changes nothing. How to read the page: [approving](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/approving.md). How the page protects you: [approval page](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/approval-page.md).
 
 ## Install
 
@@ -124,24 +124,24 @@ npm i @phygital-key/a2a
 
 | Where | Command |
 |---|---|
-| macOS, Linux (script) | `curl -fsSL https://github.com/Phygital-Key/phygital-key-a2a/releases/latest/download/install.sh \| sh` |
-| macOS, Linux (Homebrew) | `brew install phygital-key/tap/phygital-key-a2a` |
-| Windows (Scoop) | `scoop bucket add phygital-key-a2a https://github.com/Phygital-Key/phygital-key-a2a` then `scoop install phygital-key-a2a` |
-| Anywhere with Rust | `cargo install --locked --git https://github.com/Phygital-Key/phygital-key-a2a phygital-key-a2a` |
+| macOS, Linux (script) | `curl -fsSL https://github.com/Phygital-Brain/phygital-key-a2a/releases/latest/download/install.sh \| sh` |
+| macOS, Linux (Homebrew) | `brew install phygital-brain/tap/phygital-key-a2a` |
+| Windows (Scoop) | `scoop bucket add phygital-key-a2a https://github.com/Phygital-Brain/phygital-key-a2a` then `scoop install phygital-key-a2a` |
+| Anywhere with Rust | `cargo install --locked --git https://github.com/Phygital-Brain/phygital-key-a2a phygital-key-a2a` |
 | Anywhere with Node.js (npm) | `npx -y @phygital-key/a2a serve`, or `npm install -g @phygital-key/a2a` |
-| Server (Docker) | `docker run -d --name phygital-key-a2a -p 127.0.0.1:7478:7478 -v phygital-key-a2a:/data ghcr.io/phygital-key/phygital-key-a2a:latest` |
+| Server (Docker) | `docker run -d --name phygital-key-a2a -p 127.0.0.1:7478:7478 -v phygital-key-a2a:/data ghcr.io/phygital-brain/phygital-key-a2a:latest` |
 | Secure install (macOS, Linux) | See [out of the AI's reach](#out-of-the-ais-reach) |
-| By hand, also Windows | Download from [Releases](https://github.com/Phygital-Key/phygital-key-a2a/releases). Each file has a `.sha256` next to it, and the signed lists `release.txt` and `release2.txt` give every file's SHA-256 |
+| By hand, also Windows | Download from [Releases](https://github.com/Phygital-Brain/phygital-key-a2a/releases). Each file has a `.sha256` next to it, and the signed lists `release.txt` and `release2.txt` give every file's SHA-256 |
 
-The first release was v0.1.0. Each release has files for Linux (x86_64, arm64), macOS (Apple silicon, Intel) and Windows (x86_64), the public container image `ghcr.io/phygital-key/phygital-key-a2a` (`linux/amd64`, `linux/arm64`), the Homebrew formula and a Scoop manifest.
+The first release was v0.1.0. Each release has files for Linux (x86_64, arm64), macOS (Apple silicon, Intel) and Windows (x86_64), the public container image `ghcr.io/phygital-brain/phygital-key-a2a` (`linux/amd64`, `linux/arm64`), the Homebrew formula and a Scoop manifest.
 
 The npm package `@phygital-key/a2a` runs the same released program: it holds the build for each computer (macOS, Linux, Windows) and starts the one for yours. The release workflow publishes it with npm provenance. Update it with npm (`npm install -g @phygital-key/a2a@latest`).
 
 The script downloads the latest release for your computer and checks two things before it installs anything. First, that the release's file list (`release2.txt`) is signed by a release key built into the script, and is still in date. Second, that the download matches its SHA-256. Then it writes one file, `~/.local/bin/phygital-key-a2a`. It needs `curl`, `tar` and `openssl`. To update later: `phygital-key-a2a update`.
 
-The container runs `phygital-key-a2a --bind 0.0.0.0 serve` as user `65532`, with its data in `/data` (`PHYGITAL_KEY_A2A_HOME=/data`). Add your key with `docker exec -it phygital-key-a2a phygital-key-a2a enroll`, and get the access token with `docker exec -it phygital-key-a2a phygital-key-a2a token`. Only open the port on `127.0.0.1`, or put an HTTPS proxy in front and pass `--origin https://your.host` ([your own server](https://github.com/Phygital-Key/phygital-key/blob/main/docs/own-server.md)).
+The container runs `phygital-key-a2a --bind 0.0.0.0 serve` as user `65532`, with its data in `/data` (`PHYGITAL_KEY_A2A_HOME=/data`). Add your key with `docker exec -it phygital-key-a2a phygital-key-a2a enroll`, and get the access token with `docker exec -it phygital-key-a2a phygital-key-a2a token`. Only open the port on `127.0.0.1`, or put an HTTPS proxy in front and pass `--origin https://your.host` ([your own server](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/own-server.md)).
 
-Every way to install and update: [updates](https://github.com/Phygital-Key/phygital-key/blob/main/docs/updates.md). The names this product uses: [reference](https://github.com/Phygital-Key/phygital-key/blob/main/docs/reference.md#names-per-product).
+Every way to install and update: [updates](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/updates.md). The names this product uses: [reference](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/reference.md#names-per-product).
 
 ## Try it in 2 minutes
 
@@ -225,7 +225,7 @@ Every message to this agent has one data part (`mediaType: application/json`), a
 | Key | What it asks | The answer |
 |---|---|---|
 | `request` | A one-time approval: `{"request": {"type", "params"}, "aud", "level"}`, and optionally `agent_key` (the asking agent's own key, so only it can use the approval) | A task in `TASK_STATE_AUTH_REQUIRED` |
-| `standing` | A [standing approval](https://github.com/Phygital-Key/phygital-key/blob/main/docs/standing-approvals.md): `{"for_type", "fixed", "vary", "max_uses", "days", "aud"}` | A task in `TASK_STATE_AUTH_REQUIRED` |
+| `standing` | A [standing approval](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/standing-approvals.md): `{"for_type", "fixed", "vary", "max_uses", "days", "aud"}` | A task in `TASK_STATE_AUTH_REQUIRED` |
 | `use` | One use of an approved standing approval: `{"standingId", "request"}` | A message with `approval`, `useToken`, `usesLeft` |
 | `receipt` | Passes back the service's signed receipt: `{"id", "receipt"}` | A message with `serviceReported` |
 | `revoke` | Stops a standing approval: `{"standingId"}` | A message with `revoked` and the `signUrl` for the person |
@@ -255,11 +255,11 @@ The release workflow never turns on the `tck` feature. Only a `tck` build accept
 
 ## Check approvals in your service
 
-<p align="center"><img src="https://raw.githubusercontent.com/Phygital-Key/phygital-key/main/docs/images/promo/check.png" alt="For services, check it anywhere: Rust, JavaScript or any language through the command line, with the same 141 shared test vectors. Three cards: Rust with phygital-key-verify, building the request you are about to run and calling verifier.verify with Level::High, which refuses on any doubt; JavaScript with no dependencies, where r.ok is true to act and r.error is REPLAYED; and the command line, phygital-key-mcp verify with the approval, the request and the audience, printing ok true with exit 0 or error REPLAYED with exit 1, the same in phygital-key-a2a." width="100%"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/Phygital-Brain/phygital-key/main/docs/images/promo/check.png" alt="For services, check it anywhere: Rust, JavaScript or any language through the command line, with the same 141 shared test vectors. Three cards: Rust with phygital-key-verify, building the request you are about to run and calling verifier.verify with Level::High, which refuses on any doubt; JavaScript with no dependencies, where r.ok is true to act and r.error is REPLAYED; and the command line, phygital-key-mcp verify with the approval, the request and the audience, printing ok true with exit 0 or error REPLAYED with exit 1, the same in phygital-key-a2a." width="100%"></p>
 
 This part is for whoever runs the service. The service does the checking. It compares the approval with the request **it** is about to run, built from its own data. The check is the same no matter which product made the approval, so an approval collected over A2A is checked exactly like one collected over MCP.
 
-**Rust**, with the [`phygital-key-verify`](https://github.com/Phygital-Key/phygital-key/blob/main/docs/verifier-rust.md) library from the base:
+**Rust**, with the [`phygital-key-verify`](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/verifier-rust.md) library from the base:
 
 ```rust
 use phygital_key_verify::{Config, Keyring, Level, Verifier};
@@ -282,9 +282,9 @@ phygital-key-a2a verify --approval "$APPROVAL" \
   --aud https://deploy.example.com --level high
 ```
 
-Exit 0 with `{"ok": true, ...}` means go ahead. Exit 1 with `{"ok": false, "error": "REQUEST_MISMATCH"}` means no. Used approvals are saved in a local file, so each one works only once. There is also a JavaScript checker with no dependencies, and it passes the same 141 shared test cases ([JavaScript](https://github.com/Phygital-Key/phygital-key/blob/main/docs/verifier-js.md)).
+Exit 0 with `{"ok": true, ...}` means go ahead. Exit 1 with `{"ok": false, "error": "REQUEST_MISMATCH"}` means no. Used approvals are saved in a local file, so each one works only once. There is also a JavaScript checker with no dependencies, and it passes the same 141 shared test cases ([JavaScript](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/verifier-js.md)).
 
-Full guide: [integrate](https://github.com/Phygital-Key/phygital-key/blob/main/docs/integrate.md). By language: [Rust](https://github.com/Phygital-Key/phygital-key/blob/main/docs/verifier-rust.md), [JavaScript](https://github.com/Phygital-Key/phygital-key/blob/main/docs/verifier-js.md), [command line](https://github.com/Phygital-Key/phygital-key/blob/main/docs/cli.md).
+Full guide: [integrate](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/integrate.md). By language: [Rust](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/verifier-rust.md), [JavaScript](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/verifier-js.md), [command line](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/cli.md).
 
 ## Safety, verification and authority
 
@@ -304,7 +304,7 @@ When in doubt, the checker says no. The first check that fails refuses the appro
 | 8 | The "person was there" and "person was verified" flags match the level | `ASSURANCE_TOO_LOW` |
 | 9 | It is the first use (used approvals are remembered) | `REPLAYED` |
 
-Every code, why it happens and what to do: [error codes](https://github.com/Phygital-Key/phygital-key/blob/main/docs/error-codes.md).
+Every code, why it happens and what to do: [error codes](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/error-codes.md).
 
 ### The cryptography
 
@@ -317,21 +317,21 @@ $$\text{challenge} = \mathrm{SHA256}\big(\texttt{"phygital-key/approval/v1"} \,\
 - The fixed form is RFC 8785 (JCS): strict JSON, only safe whole numbers, no decimals, and text in Unicode NFC. Other text is refused, never rewritten.
 - Receipts and use tokens are ES256 JWS. The audit log is a SHA-256 hash chain, so a changed entry shows. Release lists are signed with ECDSA P-256, and also with ML-DSA-65, a signature built to resist future quantum computers.
 
-Deep dives: [canonical form](https://github.com/Phygital-Key/phygital-key/blob/main/docs/canonical-form.md), [WebAuthn checks](https://github.com/Phygital-Key/phygital-key/blob/main/docs/webauthn.md), [key history](https://github.com/Phygital-Key/phygital-key/blob/main/docs/key-history.md).
+Deep dives: [canonical form](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/canonical-form.md), [WebAuthn checks](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/webauthn.md), [key history](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/key-history.md).
 
 > [!NOTE]
-> Approvals are **signed, not encrypted**. The gate, the service, every agent that passes the task result along and anyone holding an approval can read the request. Keep passwords and card numbers out of requests. Use HTTPS for any gate that isn't on `localhost`. Why: [decision 33](https://github.com/Phygital-Key/phygital-key/blob/main/docs/decisions.md).
+> Approvals are **signed, not encrypted**. The gate, the service, every agent that passes the task result along and anyone holding an approval can read the request. Keep passwords and card numbers out of requests. Use HTTPS for any gate that isn't on `localhost`. Why: [decision 33](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/decisions.md).
 
 Every key you add or remove is itself an approval, signed by a key you already trust. So a service can check your whole key history starting from your first key's fingerprint (`phygital-key-a2a keys --check <fingerprint>`).
 
 ### Out of the AI's reach
 
-<p align="center"><img src="https://raw.githubusercontent.com/Phygital-Key/phygital-key/main/docs/images/promo/reach.png" alt="Secure install on macOS and Linux, out of the AI's reach: the gate runs as its own locked-down system user, and an agent acting as you cannot touch it. You, and any AI acting as you, are refused when trying to change its program, read its data, write its keys or serve a fake page on its port. Only the administrator password crosses into the gate's own system user." width="100%"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/Phygital-Brain/phygital-key/main/docs/images/promo/reach.png" alt="Secure install on macOS and Linux, out of the AI's reach: the gate runs as its own locked-down system user, and an agent acting as you cannot touch it. You, and any AI acting as you, are refused when trying to change its program, read its data, write its keys or serve a fake page on its port. Only the administrator password crosses into the gate's own system user." width="100%"></p>
 
 An agent on your computer runs as you, so it could change files you own, including a gate you installed yourself. The secure install puts the gate where the AI can't reach it (macOS and Linux). Open a new terminal and run:
 
 ```bash
-curl -q -fsSL https://raw.githubusercontent.com/Phygital-Key/phygital-key-a2a/v0.3.1/install-service.sh | sudo bash
+curl -q -fsSL https://raw.githubusercontent.com/Phygital-Brain/phygital-key-a2a/v0.3.1/install-service.sh | sudo bash
 ```
 
 It downloads the official release itself and checks it against the signed release list. It installs it into folders only the administrator can change, and runs it as its own user. If any other program is already using port 7478, it refuses to run. Then:
@@ -354,7 +354,7 @@ On Linux, systemd holds the gate's port while the gate restarts for an update, s
 > [!IMPORTANT]
 > The secure install only protects the gate if agents can't get your administrator password. Run it from a terminal you trust, don't let your user run `sudo` without a password, and never type that password where an agent can see it. Each admin command asks for it.
 
-Details, every folder and every refusal: [secure install](https://github.com/Phygital-Key/phygital-key/blob/main/docs/secure-install.md).
+Details, every folder and every refusal: [secure install](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/secure-install.md).
 
 ### Signed automatic updates
 
@@ -368,7 +368,7 @@ The signing key is a secret kept in this repository's GitHub environment `releas
 
 The update waits while a standing approval is active (7 days at most), because a restart would end it. If the new gate doesn't start and pass its checks, the previous version comes back. The update runs as the administrator with a clean setup, so your own settings like `~/.curlrc` and `PATH` are never used.
 
-`phygital-key-a2a-admin status` shows the last result, `phygital-key-a2a-admin update` updates now, and `--no-auto-update` turns automatic updates off. How updates are protected: [the update channel](https://github.com/Phygital-Key/phygital-key/blob/main/docs/threat-model.md#the-update-channel). Every way to update: [updates](https://github.com/Phygital-Key/phygital-key/blob/main/docs/updates.md).
+`phygital-key-a2a-admin status` shows the last result, `phygital-key-a2a-admin update` updates now, and `--no-auto-update` turns automatic updates off. How updates are protected: [the update channel](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/threat-model.md#the-update-channel). Every way to update: [updates](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/updates.md).
 
 ### How it is tested
 
@@ -383,11 +383,11 @@ The update waits while a standing approval is active (7 days at most), because a
 | Shared test cases | Base | 141 cases that both the Rust and the JavaScript checkers must pass, plus Google's Wycheproof cases, a cross-check with SimpleWebAuthn, property tests, fuzzing and mutation testing |
 | Security reviews | Base | 9 separate AI security reviews. Every problem found was fixed or written down as a known limit. Review 8 covers the A2A part |
 
-CI runs on every change on Linux, macOS and Windows, and again after each daily base update. Job by job: [testing](docs/testing.md). The engine's tests: [testing in the base](https://github.com/Phygital-Key/phygital-key/blob/main/docs/testing.md). Found a problem? [Report it privately](SECURITY.md).
+CI runs on every change on Linux, macOS and Windows, and again after each daily base update. Job by job: [testing](docs/testing.md). The engine's tests: [testing in the base](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/testing.md). Found a problem? [Report it privately](SECURITY.md).
 
 ## Standing approvals
 
-<p align="center"><img src="https://raw.githubusercontent.com/Phygital-Key/phygital-key/main/docs/images/promo/standing.png" alt="Standing approvals, say yes once, with limits: for small repeated actions, every use is checked against what you signed, and you can revoke it at any time. A signed, active standing approval for payment to ACME Ltd in EUR, amount_cents 1 to 2000, at most 5 uses in 7 days, used 2 of 5; a use with amount_cents 5000 is refused with NOT_ALLOWED." width="100%"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/Phygital-Brain/phygital-key/main/docs/images/promo/standing.png" alt="Standing approvals, say yes once, with limits: for small repeated actions, every use is checked against what you signed, and you can revoke it at any time. A signed, active standing approval for payment to ACME Ltd in EUR, amount_cents 1 to 2000, at most 5 uses in 7 days, used 2 of 5; a use with amount_cents 5000 is refused with NOT_ALLOWED." width="100%"></p>
 
 For small actions that repeat, you can say yes once, with limits:
 
@@ -395,7 +395,7 @@ For small actions that repeat, you can say yes once, with limits:
 
 The asking agent sends a `standing` message (up to 30 days). Once you approve, the task finishes with a `standingId`. For each action, the agent sends a `use` message and gets back the approval, a use token that lasts one minute, and how many uses are left. It sends the approval and the token to the service (the `Phygital-Approval` and `Phygital-Use` headers). The service checks both and counts the uses itself. A different payee, a bigger amount or an extra field is refused with `NOT_ALLOWED`. Standing approvals always need your fingerprint, face or PIN.
 
-You can cancel it on the approval page, or have the agent send a `revoke` message. New uses stop at once. One more touch on the `signUrl` signs a cancellation notice that services read from `/.well-known/phygital-key-revoked.json`. Guides: [for people](https://github.com/Phygital-Key/phygital-key/blob/main/docs/standing-approvals.md), [for services](https://github.com/Phygital-Key/phygital-key/blob/main/docs/integrate.md#standing-approvals), [cancellations](https://github.com/Phygital-Key/phygital-key/blob/main/docs/revocations.md).
+You can cancel it on the approval page, or have the agent send a `revoke` message. New uses stop at once. One more touch on the `signUrl` signs a cancellation notice that services read from `/.well-known/phygital-key-revoked.json`. Guides: [for people](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/standing-approvals.md), [for services](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/integrate.md#standing-approvals), [cancellations](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/revocations.md).
 
 ## Receipts
 
@@ -405,11 +405,11 @@ After it acts, a service can send back a signed receipt ("done" or "failed"). Th
 phygital-key-a2a trust-service --aud https://deploy.example.com --key <its receipt_public_key>
 ```
 
-Format and checks: [receipts](https://github.com/Phygital-Key/phygital-key/blob/main/docs/receipts.md).
+Format and checks: [receipts](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/receipts.md).
 
 ## All the guides
 
-The shared guides are in the base repository: **[all the guides](https://github.com/Phygital-Key/phygital-key#all-the-guides)** (approving, keys, standing approvals, secure install, checking approvals in your service, security). Guides for one product (connecting agents, its messages) are in that product's repository.
+The shared guides are in the base repository: **[all the guides](https://github.com/Phygital-Brain/phygital-key#all-the-guides)** (approving, keys, standing approvals, secure install, checking approvals in your service, security). Guides for one product (connecting agents, its messages) are in that product's repository.
 
 This product's guides: [Getting started](docs/getting-started.md) · [Connect your agent](docs/connect-your-agent.md) · [Protocol](docs/protocol.md) · [Extension](docs/extension.md) · [Testing](docs/testing.md)
 
@@ -428,7 +428,7 @@ This product's guides: [Getting started](docs/getting-started.md) · [Connect yo
 | [`release-keys.pem`](release-keys.pem) | The public release keys that every update and installer checks against |
 | `install.sh`, `install-service.sh`, `tests/secure-install.sh`, `scripts/` | Made from the base's templates for this product with `phygital-key-a2a product-files`. Never edited by hand: CI fails if they don't match. See [AGENTS.md](AGENTS.md) |
 
-Everything else comes from the base, [Phygital-Key/phygital-key](https://github.com/Phygital-Key/phygital-key): the approval page, keys, standing approvals, receipts, audit log, secure install, signed updates and the checker. Every day the `sync-base` workflow moves this product to the base's latest version. It keeps the change only if the tests and the 172 end-to-end checks pass, then saves it and runs the full CI. How the base and the products fit together: [architecture](https://github.com/Phygital-Key/phygital-key/blob/main/docs/architecture.md#the-base-and-the-products).
+Everything else comes from the base, [Phygital-Brain/phygital-key](https://github.com/Phygital-Brain/phygital-key): the approval page, keys, standing approvals, receipts, audit log, secure install, signed updates and the checker. Every day the `sync-base` workflow moves this product to the base's latest version. It keeps the change only if the tests and the 172 end-to-end checks pass, then saves it and runs the full CI. How the base and the products fit together: [architecture](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/architecture.md#the-base-and-the-products).
 
 Changes: [CHANGELOG.md](CHANGELOG.md). Security problems: [SECURITY.md](SECURITY.md). Contributing: [CONTRIBUTING.md](CONTRIBUTING.md).
 
@@ -442,7 +442,7 @@ The gate keeps its data in one folder: `~/.phygital-key-a2a`, or after the secur
 - signed cancellations;
 - the access token.
 
-Waiting requests and tasks live only in memory, with a limited history. The agent card holds no token. No analytics, no accounts, no tracking. The fonts are built into the program, so the approval page loads nothing from the internet. More: [privacy](https://github.com/Phygital-Key/phygital-key/blob/main/docs/privacy.md).
+Waiting requests and tasks live only in memory, with a limited history. The agent card holds no token. No analytics, no accounts, no tracking. The fonts are built into the program, so the approval page loads nothing from the internet. More: [privacy](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/privacy.md).
 
 ## Open source and credit
 
@@ -454,7 +454,7 @@ Contributions are welcome under the same license: see [CONTRIBUTING.md](CONTRIBU
 
 ## No warranty
 
-Provided "as is", without warranty of any kind, as the [license](LICENSE) says. It hasn't been audited yet: try it with the demo first, read the [threat model](https://github.com/Phygital-Key/phygital-key/blob/main/docs/threat-model.md), and keep a second key added as a backup.
+Provided "as is", without warranty of any kind, as the [license](LICENSE) says. It hasn't been audited yet: try it with the demo first, read the [threat model](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/threat-model.md), and keep a second key added as a backup.
 
 ## License
 

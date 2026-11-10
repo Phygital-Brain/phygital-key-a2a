@@ -37,7 +37,7 @@ pub fn card(origin: &str) -> Value {
         "supportedInterfaces": [
             {"url": format!("{origin}/a2a"), "protocolBinding": "JSONRPC", "protocolVersion": "1.0"}
         ],
-        "provider": {"organization": "Phygital-Key", "url": "https://github.com/Phygital-Key"},
+        "provider": {"organization": "Phygital Brain", "url": "https://github.com/Phygital-Brain"},
         "version": p.version,
         "documentationUrl": format!("https://github.com/{}", p.repo),
         "capabilities": {
@@ -240,7 +240,7 @@ mod tests {
             c["securityRequirements"][0]["schemes"]["bearer"]["list"],
             json!([])
         );
-        assert_eq!(c["provider"]["organization"], "Phygital-Key");
+        assert_eq!(c["provider"]["organization"], "Phygital Brain");
         let ids: Vec<&str> = c["skills"]
             .as_array()
             .map(|s| s.iter().filter_map(|k| k["id"].as_str()).collect())

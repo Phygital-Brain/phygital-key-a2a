@@ -6,7 +6,7 @@ use serde_json::{Value, json};
 
 /// The Phygital Key A2A extension: one stable URI, documented in docs/extension.md.
 pub const EXT: &str =
-    "https://github.com/Phygital-Key/phygital-key-a2a/blob/main/docs/extension.md#v1";
+    "https://github.com/Phygital-Brain/phygital-key-a2a/blob/main/docs/extension.md#v1";
 
 /// A2A task states (proto `TaskState`).
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

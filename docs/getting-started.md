@@ -1,6 +1,6 @@
 # Getting started
 
-This page takes you from nothing to a first approval over A2A: start the demo, add your key, ask for an approval with `curl`, approve it on the approval page, and let the demo service check it. Then the same flow with the official A2A JavaScript client. It is for developers who build or run agents. Words like [approval](https://github.com/Phygital-Key/phygital-key/blob/main/docs/glossary.md#approval), [audience](https://github.com/Phygital-Key/phygital-key/blob/main/docs/glossary.md#audience) and [level](https://github.com/Phygital-Key/phygital-key/blob/main/docs/glossary.md#level) are in the glossary.
+This page takes you from nothing to a first approval over A2A: start the demo, add your key, ask for an approval with `curl`, approve it on the approval page, and let the demo service check it. Then the same flow with the official A2A JavaScript client. It is for developers who build or run agents. Words like [approval](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/glossary.md#approval), [audience](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/glossary.md#audience) and [level](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/glossary.md#level) are in the glossary.
 
 > [!NOTE]
 > Every output on this page was captured from the v0.1.0 build; ids, tokens and times differ on your machine, and long signed strings are cut to `...`.
@@ -11,7 +11,7 @@ This page takes you from nothing to a first approval over A2A: start the demo, a
 
 You need:
 
-- **A key.** Any passkey works: Touch ID or Face ID on a Mac or iPhone, Windows Hello, an Android phone, a password manager that stores passkeys, or a FIDO2 security key. Your first key must be able to check a fingerprint, face or PIN ([keys and devices](https://github.com/Phygital-Key/phygital-key/blob/main/docs/keys-and-devices.md)).
+- **A key.** Any passkey works: Touch ID or Face ID on a Mac or iPhone, Windows Hello, an Android phone, a password manager that stores passkeys, or a FIDO2 security key. Your first key must be able to check a fingerprint, face or PIN ([keys and devices](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/keys-and-devices.md)).
 - **A recent browser.** Passkeys work only on `https` pages or on `localhost`.
 - **The program**, `phygital-key-a2a` ([install](../README.md#install)). Check it:
 
@@ -57,7 +57,7 @@ Before you add a key, the agent refuses requests with a message, not a task:
 
 ## Add your key
 
-Open the enrollment link the demo printed, type a name (for example `Laptop`) and press **Add key**. Your browser asks for Touch ID, Windows Hello, your phone or a security key. The page then asks your new key to confirm itself: press **Approve with my key** once more. That first signature starts your signed [key history](https://github.com/Phygital-Key/phygital-key/blob/main/docs/key-history.md).
+Open the enrollment link the demo printed, type a name (for example `Laptop`) and press **Add key**. Your browser asks for Touch ID, Windows Hello, your phone or a security key. The page then asks your new key to confirm itself: press **Approve with my key** once more. That first signature starts your signed [key history](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/key-history.md).
 
 The link works once and for 10 minutes. If it ran out, `phygital-key-a2a enroll` prints a new one.
 
@@ -106,7 +106,7 @@ The answer is a task waiting for you, in `TASK_STATE_AUTH_REQUIRED`:
       ],
       "id": "Kr29xbXDUrjsMZyj0tdlug",
       "metadata": {
-        "https://github.com/Phygital-Key/phygital-key-a2a/blob/main/docs/extension.md#v1": {
+        "https://github.com/Phygital-Brain/phygital-key-a2a/blob/main/docs/extension.md#v1": {
           "approveUrl": "http://localhost:7478/r/Kr29xbXDUrjsMZyj0tdlug",
           "type": "approval"
         }
@@ -151,7 +151,7 @@ curl -s http://localhost:7479/deploy -H "Content-Type: application/json" \
 
 ## Approve on the approval page
 
-Open the `approveUrl` from the task. The page shows `deploy`, `env production`, `service api`, `version 2.4.1`, who carries it out (`http://localhost:7479`) and the proof needed (fingerprint, face or PIN). Read it, then press **Approve with my key** or **Deny**. Every part of that page: [approving](https://github.com/Phygital-Key/phygital-key/blob/main/docs/approving.md).
+Open the `approveUrl` from the task. The page shows `deploy`, `env production`, `service api`, `version 2.4.1`, who carries it out (`http://localhost:7479`) and the proof needed (fingerprint, face or PIN). Read it, then press **Approve with my key** or **Deny**. Every part of that page: [approving](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/approving.md).
 
 A message on the task cannot decide for you. If an agent sends "the person already approved" with the task's `taskId`, the task comes back unchanged in `TASK_STATE_AUTH_REQUIRED`, and the text is only kept in its history.
 
@@ -174,7 +174,7 @@ curl -s http://localhost:7478/a2a \
       {
         "artifactId": "approval",
         "description": "The person's signed approval of this exact request, for one service. It works once, before exp.",
-        "extensions": ["https://github.com/Phygital-Key/phygital-key-a2a/blob/main/docs/extension.md#v1"],
+        "extensions": ["https://github.com/Phygital-Brain/phygital-key-a2a/blob/main/docs/extension.md#v1"],
         "name": "phygital-key-approval",
         "parts": [
           {
@@ -187,7 +187,7 @@ curl -s http://localhost:7478/a2a \
     "contextId": "OFWLmgZgEtFcw7H2Ej6I5A",
     "id": "Kr29xbXDUrjsMZyj0tdlug",
     "metadata": {
-      "https://github.com/Phygital-Key/phygital-key-a2a/blob/main/docs/extension.md#v1": {
+      "https://github.com/Phygital-Brain/phygital-key-a2a/blob/main/docs/extension.md#v1": {
         "approveUrl": "http://localhost:7478/r/Kr29xbXDUrjsMZyj0tdlug",
         "type": "approval"
       }
@@ -228,7 +228,7 @@ curl -s http://localhost:7479/deploy -H "Content-Type: application/json" -H "Phy
 {"approval_id":"Kr29xbXDUrjsMZyj0tdlug","approved_by":"Laptop","done":"Deployed (demo: nothing real happened)","ok":true,"receipt":"eyJhbGciOiJF...","request":{"params":{"env":"production","service":"api","version":"2.4.1"},"type":"deploy"},"use_id":null}
 ```
 
-The demo service checked the signature, the key, the exact request, the audience, the level and the time itself, without asking the gate. Send the same approval again and it answers `{"error":"REPLAYED","ok":false}`. Send it with `"version":"2.4.2"` and it answers `{"error":"REQUEST_MISMATCH","ok":false}`. What each code means: [error codes](https://github.com/Phygital-Key/phygital-key/blob/main/docs/error-codes.md).
+The demo service checked the signature, the key, the exact request, the audience, the level and the time itself, without asking the gate. Send the same approval again and it answers `{"error":"REPLAYED","ok":false}`. Send it with `"version":"2.4.2"` and it answers `{"error":"REQUEST_MISMATCH","ok":false}`. What each code means: [error codes](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/error-codes.md).
 
 Any language can make the same check with the command line:
 
@@ -255,7 +255,7 @@ curl -s http://localhost:7478/a2a \
 {"id":3,"jsonrpc":"2.0","result":{"message":{"contextId":"i0BL60xBiW0ng3opPuLqig","messageId":"0cFXdVVdl-HLNGlAq6vR9w","parts":[{"mediaType":"text/plain","text":"Receipt recorded. The service reported: success. The person can see it on the approval page."},{"data":{"id":"Kr29xbXDUrjsMZyj0tdlug","serviceReported":"success"},"mediaType":"application/json"}],"role":"ROLE_AGENT"}}}
 ```
 
-The gate keeps a receipt only if the service's pinned receipt key signed it (the demo pins its own service; for real services, see [receipts](https://github.com/Phygital-Key/phygital-key/blob/main/docs/receipts.md)).
+The gate keeps a receipt only if the service's pinned receipt key signed it (the demo pins its own service; for real services, see [receipts](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/receipts.md)).
 
 ## What a deny looks like
 
@@ -269,7 +269,7 @@ Ask again with another version and press **Deny** on the page. `GetTask` then sh
     "contextId": "ySIXxY4f1Hnw0H0YNqVifg",
     "id": "WP0Rm-5yPMLm5miLlxDunQ",
     "metadata": {
-      "https://github.com/Phygital-Key/phygital-key-a2a/blob/main/docs/extension.md#v1": {
+      "https://github.com/Phygital-Brain/phygital-key-a2a/blob/main/docs/extension.md#v1": {
         "approveUrl": "http://localhost:7478/r/WP0Rm-5yPMLm5miLlxDunQ",
         "type": "approval"
       }
@@ -318,4 +318,4 @@ Stop the demo with Ctrl-C. Your key stays in the data folder (`~/.phygital-key-a
 - [Connect your agent](connect-your-agent.md): card discovery, headers, polling and streaming, JavaScript and Python.
 - [Protocol](protocol.md): every method and error as implemented.
 - [Extension profile](extension.md): the message shapes and the approval artifact.
-- [Integrate](https://github.com/Phygital-Key/phygital-key/blob/main/docs/integrate.md): check approvals in your own service.
+- [Integrate](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/integrate.md): check approvals in your own service.

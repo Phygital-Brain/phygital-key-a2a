@@ -5,7 +5,7 @@ abstract: "Phygital Key for A2A: agents ask through the A2A protocol, a person a
 type: software
 authors:
   - name: "Phygital-Key"
-repository-code: "https://github.com/Phygital-Key/phygital-key-a2a"
+repository-code: "https://github.com/Phygital-Brain/phygital-key-a2a"
 license: Apache-2.0
 version: 0.3.1
 keywords: [mcp, a2a, passkey, webauthn, approval, ai-agents, human-in-the-loop, security]

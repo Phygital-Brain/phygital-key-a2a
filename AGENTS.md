@@ -7,11 +7,11 @@ Notes for AI coding agents (Claude Code, Codex, Cursor, Copilot and others) and 
 
 ## What this repository is
 
-Phygital Key A2A is one product built on the shared base [Phygital-Key/phygital-key](https://github.com/Phygital-Key/phygital-key). The base holds the engine: the verifier (`phygital-key-verify`), the gate library (`phygital-key-gate`: approval page, keys, standing approvals, receipts, audit log, secure install, signed updates and the shared commands), the spec, the test vectors and the shared docs. The base publishes no programs and no releases.
+Phygital Key A2A is one product built on the shared base [Phygital-Brain/phygital-key](https://github.com/Phygital-Brain/phygital-key). The base holds the engine: the verifier (`phygital-key-verify`), the gate library (`phygital-key-gate`: approval page, keys, standing approvals, receipts, audit log, secure install, signed updates and the shared commands), the spec, the test vectors and the shared docs. The base publishes no programs and no releases.
 
 This repository adds only what is A2A:
 
-- the product's identity (name `Phygital Key A2A`, program `phygital-key-a2a`, id `a2a`, port 7478, repository `Phygital-Key/phygital-key-a2a`, its pinned release keys), as a `Product` in `src/main.rs`;
+- the product's identity (name `Phygital Key A2A`, program `phygital-key-a2a`, id `a2a`, port 7478, repository `Phygital-Brain/phygital-key-a2a`, its pinned release keys), as a `Product` in `src/main.rs`;
 - the A2A adapter (the base's `Adapter` trait): the JSON-RPC 2.0 endpoint at `/a2a` (A2A 1.0, with server-sent events for streaming), the public agent card at `/.well-known/agent-card.json`, and the connect hints;
 - the message shapes, the task states and the approval artifact, documented as an A2A extension ([docs/extension.md](docs/extension.md));
 - the test behaviours for the conformance kit, behind the `tck` cargo feature;
@@ -40,7 +40,7 @@ src/time.rs                      ISO 8601 timestamps
 src/tck.rs                       conformance-kit behaviours, compiled only with --features tck
 tests/e2e/run.mjs                172 end-to-end and red-team checks
 tests/e2e/package.json, package-lock.json   pinned @a2a-js/sdk 1.3.0 and Playwright
-packaging/container/Dockerfile   ghcr.io/phygital-key/phygital-key-a2a: distroless cc-debian12:nonroot (pinned by digest), uid 65532, data in /data
+packaging/container/Dockerfile   ghcr.io/phygital-brain/phygital-key-a2a: distroless cc-debian12:nonroot (pinned by digest), uid 65532, data in /data
 packaging/npm/                   build.sh makes the npm package @phygital-key/a2a from a release's archives (a launcher and the program for each target), publish.sh publishes it
 .github/workflows/ci.yml         CI on every push to main, every pull request, and when the sync starts it
 .github/workflows/release.yml    on a v* tag: test, build 5 targets, attest, sign release.txt and release2.txt (P-256, and ML-DSA-65 once pinned), publish, then npm and the container
@@ -55,7 +55,7 @@ scripts/release-key.sh           owner only, once: makes the release key, pins i
 scripts/package-manifests.sh     writes the Homebrew, Scoop and winget manifests for a published release
 ```
 
-While the base and this product are built side by side, `Cargo.toml` takes the two base crates as path dependencies (`../repo/crates/...`). For publishing they switch to the git base (`Phygital-Key/phygital-key`, branch `main`); `Cargo.lock` then pins the exact base commit, and the sync moves it.
+While the base and this product are built side by side, `Cargo.toml` takes the two base crates as path dependencies (`../repo/crates/...`). For publishing they switch to the git base (`Phygital-Brain/phygital-key`, branch `main`); `Cargo.lock` then pins the exact base commit, and the sync moves it.
 
 ## Files made from the base
 
@@ -74,7 +74,7 @@ The CI job `files made from the base are up to date` runs exactly that and fails
 
 ## Changing shared behaviour
 
-Anything that is not A2A lives in the base: the approval page, enrollment, keys and key history, standing approvals, revocations, receipts, the audit log, the HTTP guard (host, `Origin`, token), the request rules (no floats, NFC, the flood limits), the commands `serve`, `demo`, `enroll`, `token`, `keys`, `verify`, `install-service`, `update` and the rest, the secure install, the signed updates, the verifier and the spec. Change those in [Phygital-Key/phygital-key](https://github.com/Phygital-Key/phygital-key), with its tests and vectors, following its [AGENTS.md](https://github.com/Phygital-Key/phygital-key/blob/main/AGENTS.md). Do not copy base code into this repository to change it here.
+Anything that is not A2A lives in the base: the approval page, enrollment, keys and key history, standing approvals, revocations, receipts, the audit log, the HTTP guard (host, `Origin`, token), the request rules (no floats, NFC, the flood limits), the commands `serve`, `demo`, `enroll`, `token`, `keys`, `verify`, `install-service`, `update` and the rest, the secure install, the signed updates, the verifier and the spec. Change those in [Phygital-Brain/phygital-key](https://github.com/Phygital-Brain/phygital-key), with its tests and vectors, following its [AGENTS.md](https://github.com/Phygital-Brain/phygital-key/blob/main/AGENTS.md). Do not copy base code into this repository to change it here.
 
 A change in the base reaches this product through the daily sync, or at once if you run `cargo update -p phygital-key-gate -p phygital-key-verify` here.
 
@@ -101,7 +101,7 @@ A failing base change is never pushed here: the job stops before the commit.
 8. **No new dependencies without asking.** Open an issue first. Licences: Apache-2.0, MIT, BSD or similar.
 9. **The release signing key lives only in the GitHub environment secret** `RELEASE_SIGNING_KEY` of the environment `release`, which only a run from a `v*` tag gets. Never put a private key in the repository, a workflow, an issue, a test or a log. Never run `scripts/release-key.sh` (owner only, in the owner's own terminal), never approve a release run, and never push a `v*` tag unless the owner asked: a pushed tag signs and publishes a release.
 10. **Keep the credit.** `NOTICE` keeps the line "Created by Phygital-Key". Never write any real person's name anywhere, and add no AI attribution lines to docs, commits or release notes.
-11. **Docs in plain words, no em dashes.** Shared topics are documented only in the base; link to them with `https://github.com/Phygital-Key/phygital-key/blob/main/docs/<page>.md`. Relative links here must resolve.
+11. **Docs in plain words, no em dashes.** Shared topics are documented only in the base; link to them with `https://github.com/Phygital-Brain/phygital-key/blob/main/docs/<page>.md`. Relative links here must resolve.
 
 Changing a message shape, a task state, a status text, the artifact or the agent card also means: update [docs/extension.md](docs/extension.md) (a breaking change gets a new extension URI, `#v2`, and `EXT` in `src/proto.rs`), [docs/protocol.md](docs/protocol.md), the `HELP` text in `src/intent.rs`, the card's skills in `src/card.rs`, and the end-to-end checks.
 
@@ -138,4 +138,4 @@ Every CI job, the container check and the sync: [docs/testing.md](docs/testing.m
 - [CONTRIBUTING.md](CONTRIBUTING.md): ground rules and checks.
 - [docs/testing.md](docs/testing.md): every test and CI job.
 - [docs/protocol.md](docs/protocol.md): the methods and errors as implemented.
-- [The base's AGENTS.md](https://github.com/Phygital-Key/phygital-key/blob/main/AGENTS.md): the engine, the spec and the vectors.
+- [The base's AGENTS.md](https://github.com/Phygital-Brain/phygital-key/blob/main/AGENTS.md): the engine, the spec and the vectors.

@@ -15,7 +15,7 @@ The A2A 1.0 JSON-RPC binding exactly as Phygital Key A2A implements it: the tran
 | Request body | `Content-Type: application/json` or `application/a2a+json`, at most 64 KiB |
 | Responses | `application/json`, or `text/event-stream` for the two streaming methods |
 
-A request goes through these checks, in this order. The first three come from the shared guard in the base ([architecture](https://github.com/Phygital-Key/phygital-key/blob/main/docs/architecture.md)); the rest are this adapter's.
+A request goes through these checks, in this order. The first three come from the shared guard in the base ([architecture](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/architecture.md)); the rest are this adapter's.
 
 | # | Check | Refusal |
 |:-:|---|---|
@@ -33,7 +33,7 @@ From check 7 on, errors are JSON-RPC error responses with HTTP status `200`.
 > [!NOTE]
 > A release build never serves the endpoint without the token. `phygital-key-a2a serve --no-token` (or `demo --no-token`) prints `phygital-key-a2a: --no-token is not allowed: anyone on this machine could read approvals. Use the access token (phygital-key-a2a token).` and exits with code 2, before anything starts. Only the test-only `tck` build, used for the [conformance kit](testing.md#a2a-conformance-kit), accepts `--no-token`.
 
-When the request has the header `A2A-Extensions` listing this agent's extension URI, the response carries `A2A-Extensions: https://github.com/Phygital-Key/phygital-key-a2a/blob/main/docs/extension.md#v1`. The extension is optional: requests without the header work the same.
+When the request has the header `A2A-Extensions` listing this agent's extension URI, the response carries `A2A-Extensions: https://github.com/Phygital-Brain/phygital-key-a2a/blob/main/docs/extension.md#v1`. The extension is optional: requests without the header work the same.
 
 ## The JSON-RPC envelope
 
@@ -147,7 +147,7 @@ If you send no `contextId`, the agent makes one. Messages that make no task carr
   "status": {"state": "TASK_STATE_AUTH_REQUIRED", "message": {...}, "timestamp": "2026-10-18T04:55:27.931Z"},
   "artifacts": [...],
   "history": [...],
-  "metadata": {"https://github.com/Phygital-Key/phygital-key-a2a/blob/main/docs/extension.md#v1": {"approveUrl": "...", "type": "approval"}}
+  "metadata": {"https://github.com/Phygital-Brain/phygital-key-a2a/blob/main/docs/extension.md#v1": {"approveUrl": "...", "type": "approval"}}
 }
 ```
 
@@ -249,11 +249,11 @@ Every stream of a task sends the same events in the same order. `SubscribeToTask
 | Heartbeat on streams | every 15 seconds | `src/server.rs` |
 | Agent card cache | `max-age=300` | `src/card.rs` |
 
-The gate's own request store, flood limits and request rules: [reference](https://github.com/Phygital-Key/phygital-key/blob/main/docs/reference.md) and [canonical form](https://github.com/Phygital-Key/phygital-key/blob/main/docs/canonical-form.md).
+The gate's own request store, flood limits and request rules: [reference](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/reference.md) and [canonical form](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/canonical-form.md).
 
 ## Next
 
 - [Extension profile](extension.md): the message shapes, the artifact, carrying approvals.
 - [Connect your agent](connect-your-agent.md): clients, polling and streaming.
 - [Testing](testing.md): the checks behind each rule, and the conformance kit.
-- [Threat model](https://github.com/Phygital-Key/phygital-key/blob/main/docs/threat-model.md)
+- [Threat model](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/threat-model.md)

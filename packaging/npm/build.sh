@@ -11,7 +11,7 @@ set -euo pipefail
 
 BIN=phygital-key-a2a
 NAME=@phygital-key/a2a
-REPO=Phygital-Key/phygital-key-a2a
+REPO=Phygital-Brain/phygital-key-a2a
 
 [ $# -eq 3 ] || { echo "usage: $0 <version> <dist> <out>"; exit 1; }
 V="$1"; DIST="$(cd "$2" && pwd)"; mkdir -p "$3"; OUT="$(cd "$3" && pwd)"

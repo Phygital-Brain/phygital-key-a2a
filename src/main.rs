@@ -25,7 +25,7 @@ pub(crate) static PRODUCT: Product = Product {
     bin: "phygital-key-a2a",
     id: "a2a",
     version: env!("CARGO_PKG_VERSION"),
-    repo: "Phygital-Key/phygital-key-a2a",
+    repo: "Phygital-Brain/phygital-key-a2a",
     port: 7478,
     about: "A person approves exact AI actions with a passkey or hardware key. A2A edition.",
     release_keys: include_str!("../release-keys.pem"),

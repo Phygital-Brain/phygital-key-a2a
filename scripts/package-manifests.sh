@@ -10,12 +10,12 @@
 #   bucket/<program>.json             (Scoop, served from this repo)
 #   packaging/winget/<version>/*.yaml    (ready for a winget-pkgs pull request)
 set -euo pipefail
-# Generated for one product from the template in Phygital-Key/phygital-key.
+# Generated for one product from the template in Phygital-Brain/phygital-key.
 # BEGIN PRODUCT
 P_NAME="Phygital Key A2A"
 P_BIN=phygital-key-a2a
 P_ID=a2a
-P_REPO=Phygital-Key/phygital-key-a2a
+P_REPO=Phygital-Brain/phygital-key-a2a
 P_PORT=7478
 P_VERSION=v0.3.1
 # END PRODUCT
