@@ -12,7 +12,7 @@ P_BIN=phygital-key-a2a
 P_ID=a2a
 P_REPO=Phygital-Brain/phygital-key-a2a
 P_PORT=7478
-P_VERSION=v0.3.1
+P_VERSION=v0.3.2
 P_PATH=/a2a
 # END PRODUCT
 PORT=$P_PORT

@@ -16,7 +16,7 @@ P_BIN=phygital-key-a2a
 P_ID=a2a
 P_REPO=Phygital-Brain/phygital-key-a2a
 P_PORT=7478
-P_VERSION=v0.3.1
+P_VERSION=v0.3.2
 # END PRODUCT
 REPO="$P_REPO"
 BIN_DIR="${PHYGITAL_KEY_BIN_DIR:-$HOME/.local/bin}"

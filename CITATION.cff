@@ -7,5 +7,5 @@ authors:
   - name: "Phygital-Key"
 repository-code: "https://github.com/Phygital-Brain/phygital-key-a2a"
 license: Apache-2.0
-version: 0.3.1
+version: 0.3.2
 keywords: [mcp, a2a, passkey, webauthn, approval, ai-agents, human-in-the-loop, security]

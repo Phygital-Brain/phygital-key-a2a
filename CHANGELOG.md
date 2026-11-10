@@ -1,6 +1,11 @@
 # Changelog
 
-Changes to Phygital Key A2A. Changes to the shared engine (approval page, keys, secure install, updates, verifier) are listed in the [base changelog](https://github.com/Phygital-Key/phygital-key/blob/main/CHANGELOG.md).
+Changes to Phygital Key A2A. Changes to the shared engine (approval page, keys, secure install, updates, verifier) are listed in the [base changelog](https://github.com/Phygital-Brain/phygital-key/blob/main/CHANGELOG.md).
+
+## 0.3.2 (2026-11-10)
+
+- **New home:** the project moved to the [Phygital-Brain](https://github.com/Phygital-Brain) organisation on GitHub. Updates, install commands and docs now use `Phygital-Brain/phygital-key-a2a`. The container image is now `ghcr.io/phygital-brain/phygital-key-a2a`, and the Homebrew tap is `phygital-brain/tap`. Old links still work. Installs on 0.3.1 or older find this update through the old address, and from this version on they use the new one.
+- **Security update:** the shared engine now uses `crypto-bigint` 0.7.11 and `ctutils` 0.4.8, which fix RUSTSEC-2026-0387 (timing differences in code meant to run in constant time). Nothing changes in how approvals work.
 
 ## 0.3.1 (2026-10-23)
 
