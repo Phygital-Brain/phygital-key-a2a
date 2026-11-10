@@ -2,7 +2,7 @@
 # shellcheck disable=SC2034 # every script carries the whole PRODUCT block; not all use every value
 # Phygital Key: run the gate as its own locked-down system user (macOS, Linux).
 # This file is generated for one product (the PRODUCT block below) from the
-# template in Phygital-Key/phygital-key, crates/phygital-key-gate/assets.
+# template in Phygital-Brain/phygital-key, crates/phygital-key-gate/assets.
 #
 # Recommended (from a fresh terminal you trust), with the product's own copy:
 #   curl -q -fsSL https://raw.githubusercontent.com/<product repo>/<tag>/install-service.sh | sudo bash
@@ -38,7 +38,7 @@ umask 022
 P_NAME="Phygital Key A2A"
 P_BIN=phygital-key-a2a
 P_ID=a2a
-P_REPO=Phygital-Key/phygital-key-a2a
+P_REPO=Phygital-Brain/phygital-key-a2a
 P_PORT=7478
 P_VERSION=v0.3.1
 # END PRODUCT

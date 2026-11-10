@@ -6,7 +6,7 @@
 Extension URI:
 
 ```
-https://github.com/Phygital-Key/phygital-key-a2a/blob/main/docs/extension.md#v1
+https://github.com/Phygital-Brain/phygital-key-a2a/blob/main/docs/extension.md#v1
 ```
 
 This page is the profile that Phygital Key A2A speaks on top of
@@ -68,7 +68,7 @@ errors are kept for protocol mistakes.
   Strings and integers only, no floats, Unicode NFC, no secrets (the person sees it).
 - `aud` is the one service that will act on the yes. The approval works only there.
 - `level` is `medium` (a touch on the key) or `high` (fingerprint, face or PIN).
-- `agent_key` (optional) is your own P-256 public key (SubjectPublicKeyInfo DER, base64url). The approval is then bound to it (format `pka.2`): when you act, also send a proof signed with that key in the `Phygital-Proof` header, and a copy of the approval is useless to anyone else. How to make the proof: [agent-bound approvals](https://github.com/Phygital-Key/phygital-key/blob/main/docs/integrate.md#agent-bound-approvals).
+- `agent_key` (optional) is your own P-256 public key (SubjectPublicKeyInfo DER, base64url). The approval is then bound to it (format `pka.2`): when you act, also send a proof signed with that key in the `Phygital-Proof` header, and a copy of the approval is useless to anyone else. How to make the proof: [agent-bound approvals](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/integrate.md#agent-bound-approvals).
 
 The answer is a task in `TASK_STATE_AUTH_REQUIRED` (see below).
 
@@ -189,7 +189,7 @@ A completed task has exactly one artifact:
   "name": "phygital-key-approval",
   "description": "The person's signed approval of this exact request, for one service. It works once, before exp.",
   "parts": [{"data": {"approval": "<approval string>", "exp": 1792229460, "approvedBy": "Laptop"}, "mediaType": "application/json"}],
-  "extensions": ["https://github.com/Phygital-Key/phygital-key-a2a/blob/main/docs/extension.md#v1"]
+  "extensions": ["https://github.com/Phygital-Brain/phygital-key-a2a/blob/main/docs/extension.md#v1"]
 }
 ```
 
@@ -212,9 +212,9 @@ URI in the message's `extensions`:
     "messageId": "...",
     "role": "ROLE_USER",
     "parts": [{"text": "Deploy api 2.4.1 to production."}],
-    "extensions": ["https://github.com/Phygital-Key/phygital-key-a2a/blob/main/docs/extension.md#v1"],
+    "extensions": ["https://github.com/Phygital-Brain/phygital-key-a2a/blob/main/docs/extension.md#v1"],
     "metadata": {
-      "https://github.com/Phygital-Key/phygital-key-a2a/blob/main/docs/extension.md#v1": {
+      "https://github.com/Phygital-Brain/phygital-key-a2a/blob/main/docs/extension.md#v1": {
         "approval": "<approval string>",
         "useToken": "<only for a use of a standing approval>"
       }

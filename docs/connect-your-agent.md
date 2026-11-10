@@ -26,7 +26,7 @@ The parts a client reads (from the v0.1.0 build):
     "pushNotifications": false,
     "extendedAgentCard": false,
     "extensions": [
-      {"uri": "https://github.com/Phygital-Key/phygital-key-a2a/blob/main/docs/extension.md#v1", "required": false, "description": "..."}
+      {"uri": "https://github.com/Phygital-Brain/phygital-key-a2a/blob/main/docs/extension.md#v1", "required": false, "description": "..."}
     ]
   },
   "securitySchemes": {
@@ -81,7 +81,7 @@ Send a message with one data part whose object has the key `request`:
 
 The answer is a task in `TASK_STATE_AUTH_REQUIRED`. Show the person the `approveUrl` from its status message (data part `{"approveUrl", "id"}`) or from `metadata[<extension URI>].approveUrl`. The other four shapes (`standing`, `use`, `receipt`, `revoke`): [extension profile](extension.md#messages-the-agent-accepts).
 
-Requests must be exact: strings and integers only (no floats), Unicode NFC, no secrets (the person sees every field and anyone holding the approval can read it). The gate refuses anything else with a `ROLE_AGENT` message that says why, and no task is made. See [canonical form](https://github.com/Phygital-Key/phygital-key/blob/main/docs/canonical-form.md).
+Requests must be exact: strings and integers only (no floats), Unicode NFC, no secrets (the person sees every field and anyone holding the approval can read it). The gate refuses anything else with a `ROLE_AGENT` message that says why, and no task is made. See [canonical form](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/canonical-form.md).
 
 ## Wait for the decision
 
@@ -243,15 +243,15 @@ asyncio.run(main())
 | `TASK_STATE_CANCELED` | Do not act. |
 | `TASK_STATE_FAILED` | Do not act. Ask again only if the person wants to. |
 
-The service checks the approval itself, offline: [integrate](https://github.com/Phygital-Key/phygital-key/blob/main/docs/integrate.md). If another agent will call the service, pass the approval on as the [extension profile](extension.md#carrying-an-approval-to-another-agent) describes; that agent's service still checks it.
+The service checks the approval itself, offline: [integrate](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/integrate.md). If another agent will call the service, pass the approval on as the [extension profile](extension.md#carrying-an-approval-to-another-agent) describes; that agent's service still checks it.
 
 ## From another machine
 
-By default the gate listens on `127.0.0.1`. To reach it from agents on other machines, put it behind a TLS proxy and start it with `--origin https://your.host` ([own server](https://github.com/Phygital-Key/phygital-key/blob/main/docs/own-server.md)). On a public origin the agent card also answers with `Access-Control-Allow-Origin: *`; on `localhost` it sends no CORS header, so web pages cannot probe a local gate. The endpoint itself refuses every browser `Origin`, wherever it runs.
+By default the gate listens on `127.0.0.1`. To reach it from agents on other machines, put it behind a TLS proxy and start it with `--origin https://your.host` ([own server](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/own-server.md)). On a public origin the agent card also answers with `Access-Control-Allow-Origin: *`; on `localhost` it sends no CORS header, so web pages cannot probe a local gate. The endpoint itself refuses every browser `Origin`, wherever it runs.
 
 ## Next
 
 - [Protocol](protocol.md): methods, errors, task states, paging and limits.
 - [Extension profile](extension.md): all five message shapes and the approval artifact.
 - [Getting started](getting-started.md): the demo, step by step.
-- [Approving](https://github.com/Phygital-Key/phygital-key/blob/main/docs/approving.md): what the person sees.
+- [Approving](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/approving.md): what the person sees.

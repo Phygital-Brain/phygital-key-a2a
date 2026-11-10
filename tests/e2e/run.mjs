@@ -21,7 +21,7 @@ const BIN = process.env.PKA_BIN || "../../target/release/phygital-key-a2a";
 const PORT = Number(process.env.PKA_PORT || 17478);
 const GATE = `http://localhost:${PORT}`;
 const DEMO = `http://localhost:${PORT + 1}`;
-const EXT = "https://github.com/Phygital-Key/phygital-key-a2a/blob/main/docs/extension.md#v1";
+const EXT = "https://github.com/Phygital-Brain/phygital-key-a2a/blob/main/docs/extension.md#v1";
 const home = mkdtempSync(join(tmpdir(), "pka-a2a-e2e-"));
 const results = [];
 let failed = 0;
@@ -186,8 +186,8 @@ try {
   // with no hidden text and no links besides the gate's own and the extension's.
   const cardText = JSON.stringify(card);
   check("agent card text is plain printable ASCII (no hidden or look-alike characters)", /^[\x20-\x7e]*$/.test(cardText));
-  const cardLinks = cardText.replaceAll(GATE, "").replace(/https:\/\/github\.com\/Phygital-Key[A-Za-z0-9#\/._-]*/g, "").replace(/https:\/\/[a-z.]*example\.com/g, "");
-  check("agent card has no outside links (only the gate and Phygital-Key on GitHub)", !/https?:\/\//i.test(cardLinks), (cardLinks.match(/https?:\/\/[^"\s]*/g) || []).join(" "));
+  const cardLinks = cardText.replaceAll(GATE, "").replace(/https:\/\/github\.com\/Phygital-Brain[A-Za-z0-9#\/._-]*/g, "").replace(/https:\/\/[a-z.]*example\.com/g, "");
+  check("agent card has no outside links (only the gate and Phygital-Brain on GitHub)", !/https?:\/\//i.test(cardLinks), (cardLinks.match(/https?:\/\/[^"\s]*/g) || []).join(" "));
   check("agent card is served without a token", cardRes.status === 200 && (cardRes.headers.get("content-type") || "").startsWith("application/json"));
   check("agent card is cacheable (max-age=300)", /max-age=300/.test(cardRes.headers.get("cache-control") || ""));
   const etag = cardRes.headers.get("etag");
@@ -201,7 +201,7 @@ try {
     card.capabilities?.streaming === true && card.capabilities?.pushNotifications === false && card.capabilities?.extendedAgentCard === false);
   check("agent card declares the extension URI, not required", card.capabilities?.extensions?.length === 1 && card.capabilities.extensions[0].uri === EXT && card.capabilities.extensions[0].required === false);
   check("agent card security: bearer scheme required", card.securitySchemes?.bearer?.httpAuthSecurityScheme?.scheme === "Bearer" && JSON.stringify(card.securityRequirements) === JSON.stringify([{ schemes: { bearer: { list: [] } } }]));
-  check("agent card provider and documentation", card.provider?.organization === "Phygital-Key" && card.provider?.url === "https://github.com/Phygital-Key" && card.documentationUrl === "https://github.com/Phygital-Key/phygital-key-a2a");
+  check("agent card provider and documentation", card.provider?.organization === "Phygital Brain" && card.provider?.url === "https://github.com/Phygital-Brain" && card.documentationUrl === "https://github.com/Phygital-Brain/phygital-key-a2a");
   check("agent card modes: application/json and text/plain", JSON.stringify(card.defaultInputModes) === JSON.stringify(["application/json", "text/plain"]) && JSON.stringify(card.defaultOutputModes) === JSON.stringify(["application/json", "text/plain"]));
   const skillIds = (card.skills || []).map((s) => s.id);
   check("agent card lists the 5 skills, none can approve", JSON.stringify(skillIds) === JSON.stringify(["request_approval", "request_standing_approval", "use_standing_approval", "record_receipt", "revoke_standing_approval"]), skillIds.join(","));

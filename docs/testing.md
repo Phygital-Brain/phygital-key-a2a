@@ -1,6 +1,6 @@
 # Testing
 
-How Phygital Key A2A is tested: the unit tests, the 172 end-to-end checks, the official A2A conformance kit, the secure install test, the container check, the check that the generated files match the base, every CI job and the daily sync. It is for contributors and for anyone who wants to see what holds each guarantee. The engine's own tests (shared test vectors, Wycheproof, the SimpleWebAuthn cross-check, property tests, fuzzing, mutation testing, the JavaScript checker, the installer's release-list check, supply chain) run in the base: see [testing in the base](https://github.com/Phygital-Key/phygital-key/blob/main/docs/testing.md).
+How Phygital Key A2A is tested: the unit tests, the 172 end-to-end checks, the official A2A conformance kit, the secure install test, the container check, the check that the generated files match the base, every CI job and the daily sync. It is for contributors and for anyone who wants to see what holds each guarantee. The engine's own tests (shared test vectors, Wycheproof, the SimpleWebAuthn cross-check, property tests, fuzzing, mutation testing, the JavaScript checker, the installer's release-list check, supply chain) run in the base: see [testing in the base](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/testing.md).
 
 **On this page:** [at a glance](#at-a-glance) · [unit tests](#unit-tests) · [end-to-end checks](#end-to-end-and-red-team-checks) · [conformance kit](#a2a-conformance-kit) · [secure install](#secure-install-test) · [container](#container-check) · [generated files](#generated-files-check) · [CI](#ci) · [the sync](#the-daily-sync)
 
@@ -50,7 +50,7 @@ The checks, grouped by theme (each name in the file is the exact text the suite 
 
 | Theme | Checks | What they prove |
 |---|:-:|---|
-| Command line and agent card | 19 | A release refuses `serve --no-token` with exit code 2 and the reason; `token` prints the card, the endpoint and the headers; the card is served without a token, cacheable, with an `ETag` and `304`, no CORS on localhost; it names the product and version, one JSON-RPC 1.0 interface at `/a2a`, streaming yes, push no, the extension (not required), the bearer scheme, provider, modes, the 5 skills with all their fields, and no token; the official client connects from it. The card's text is plain printable ASCII with no hidden or look-alike characters, and its only links are the gate itself and Phygital-Key on GitHub. |
+| Command line and agent card | 19 | A release refuses `serve --no-token` with exit code 2 and the reason; `token` prints the card, the endpoint and the headers; the card is served without a token, cacheable, with an `ETag` and `304`, no CORS on localhost; it names the product and version, one JSON-RPC 1.0 interface at `/a2a`, streaming yes, push no, the extension (not required), the bearer scheme, provider, modes, the 5 skills with all their fields, and no token; the official client connects from it. The card's text is plain printable ASCII with no hidden or look-alike characters, and its only links are the gate itself and Phygital-Brain on GitHub. |
 | Transport and protocol edges | 27 | No token or a wrong one gives `401` (also through the official client); a browser `Origin` gives `403` even with the token; no `A2A-Version` or `0.3`/`2.0` gives `-32009` with `ErrorInfo`; `1.0` in the header or the query works; an empty list has `nextPageToken ""`; parse errors, batches, a wrong `jsonrpc`, no `id`, an unknown method, bad params and a missing task id get their codes; a wrong `Content-Type` gives `415`/`-32005`, `application/a2a+json` (with or without charset) is accepted, and the look-alike `application/x-a2a+json` is not; the extended card gives `-32004`; the four push methods give `-32003` (the official client sees `PushNotificationNotSupportedError`); a client message with `ROLE_AGENT`, without `messageId` or with a two-content part gives `-32602`; unsupported output modes give `-32005`; `A2A-Extensions` is echoed. |
 | Before any key | 5 | With no key enrolled, a request gets a message saying to enroll, not a task; text only, two keys, an unknown key (`approve`) and a bad level get the help message. |
 | Enrolling the first key | 1 | The first key is trusted after it signs itself. |
@@ -100,7 +100,7 @@ The kit runs without the access token, so the gate runs with `--no-token`, on it
 tests/secure-install.sh "$PWD/target/release/phygital-key-a2a"
 ```
 
-Its checks (36 on Linux, 32 on macOS) are the same as for every product: it refuses a relative or user-writable `--binary` and a port another program holds; only the gate user listens, and it may open 8192 files; the program is owned by root and the user cannot change it, read the data folder or write the keyring; `phygital-key-a2a-admin status` confirms the listener and the admin helper makes an enrollment link; no link or token reaches the gate log; the agent endpoint (`/a2a`) refuses calls without the token and accepts it; updates, a release list signed by an unknown key, the daily update job started by systemd and launchd, the systemd sandbox score (Linux), a failed update rolled back, `--no-auto-update` and `--auto-update`, root ignoring the user's `~/.curlrc` and `PATH`, uninstall and purge. What the secure install does and refuses: [secure install](https://github.com/Phygital-Key/phygital-key/blob/main/docs/secure-install.md).
+Its checks (36 on Linux, 32 on macOS) are the same as for every product: it refuses a relative or user-writable `--binary` and a port another program holds; only the gate user listens, and it may open 8192 files; the program is owned by root and the user cannot change it, read the data folder or write the keyring; `phygital-key-a2a-admin status` confirms the listener and the admin helper makes an enrollment link; no link or token reaches the gate log; the agent endpoint (`/a2a`) refuses calls without the token and accepts it; updates, a release list signed by an unknown key, the daily update job started by systemd and launchd, the systemd sandbox score (Linux), a failed update rolled back, `--no-auto-update` and `--auto-update`, root ignoring the user's `~/.curlrc` and `PATH`, uninstall and purge. What the secure install does and refuses: [secure install](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/secure-install.md).
 
 ## Container check
 
@@ -112,7 +112,7 @@ The CI job `container image (build and start)` builds the image from `packaging/
 4. checks that the image user is `65532:65532`;
 5. runs `phygital-key-a2a enroll` inside and checks that it prints a `http://localhost:7478/enroll#token=` link.
 
-The release workflow builds the published image `ghcr.io/phygital-key/phygital-key-a2a` for `linux/amd64` and `linux/arm64` from the signed release's own Linux archives.
+The release workflow builds the published image `ghcr.io/phygital-brain/phygital-key-a2a` for `linux/amd64` and `linux/arm64` from the signed release's own Linux archives.
 
 ## Generated files check
 
@@ -156,5 +156,5 @@ A base change that breaks this product never lands here: the job stops before th
 
 - [AGENTS.md](../AGENTS.md): layout, generated files and rules
 - [Protocol](protocol.md): the behaviour these checks hold
-- [Testing in the base](https://github.com/Phygital-Key/phygital-key/blob/main/docs/testing.md): vectors, property tests, fuzzing, mutation testing
-- [Threat model](https://github.com/Phygital-Key/phygital-key/blob/main/docs/threat-model.md)
+- [Testing in the base](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/testing.md): vectors, property tests, fuzzing, mutation testing
+- [Threat model](https://github.com/Phygital-Brain/phygital-key/blob/main/docs/threat-model.md)
